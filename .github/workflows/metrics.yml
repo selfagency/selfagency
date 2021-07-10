@@ -1,6 +1,9 @@
+# Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
 name: Metrics
 on:
+  # Schedule updates (each hour)
   schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 jobs:
@@ -9,11 +12,17 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
           user: selfagency
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/New_York
+          plugin_achievements: yes
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
           plugin_activity: yes
           plugin_activity_days: 14
           plugin_activity_filter: all
@@ -36,11 +45,21 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           plugin_lines: yes
+          plugin_nightscout: yes
+          plugin_nightscout_datapoints: 12
+          plugin_nightscout_highalert: 180
+          plugin_nightscout_lowalert: 80
+          plugin_nightscout_urgenthighalert: 250
+          plugin_nightscout_urgentlowalert: 50
+          plugin_nightscout_url: https://example.herokuapp.com
           plugin_notable: yes
+          plugin_projects: yes
+          plugin_projects_limit: 4
           plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 1857453
           plugin_stackoverflow_limit: 2
           plugin_stackoverflow_lines.snippet: 2
           plugin_stackoverflow_lines: 4
           plugin_stackoverflow_sections: answers-top, questions-recent
+          plugin_stackoverflow_user: 1857453
           plugin_support: yes
+          plugin_traffic: yes
