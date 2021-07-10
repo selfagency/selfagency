@@ -57,9 +57,9 @@ jobs:
           plugin_people_identicons: no
           plugin_people_shuffle: yes
           plugin_stackoverflow: yes
-          plugin_stackoverflow_limit: 3
-          plugin_stackoverflow_lines.snippet: 2
-          plugin_stackoverflow_lines: 2
+          plugin_stackoverflow_limit: 1
+          plugin_stackoverflow_lines.snippet: 1
+          plugin_stackoverflow_lines: 1
           plugin_stackoverflow_sections: answers-top, questions-recent
           plugin_stackoverflow_user: 1857453
           plugin_stars: yes
