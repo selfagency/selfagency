@@ -57,4 +57,4 @@ jobs:
           plugin_stackoverflow_sections: answers-top, questions-recent
           plugin_stackoverflow_user: 1857453
           #plugin_traffic: yes
-          plugin_support: yes
+          #plugin_support: yes
