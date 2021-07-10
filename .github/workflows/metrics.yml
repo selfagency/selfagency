@@ -35,6 +35,8 @@ jobs:
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_from: 200
+          plugin_introduction: yes
+          plugin_introduction_title: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           plugin_languages: yes
@@ -48,11 +50,15 @@ jobs:
           plugin_notable: yes
           plugin_projects: yes
           plugin_projects_limit: 4
+          plugin_skyline: yes
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 0.5
+          plugin_skyline_year: current-year
           plugin_stackoverflow: yes
           plugin_stackoverflow_limit: 2
           plugin_stackoverflow_lines.snippet: 2
           plugin_stackoverflow_lines: 4
           plugin_stackoverflow_sections: answers-top, questions-recent
           plugin_stackoverflow_user: 1857453
-          plugin_support: yes
           plugin_traffic: yes
+          plugin_support: yes
