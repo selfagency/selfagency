@@ -18,7 +18,7 @@ jobs:
           # Options
           user: selfagency
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, repositories, metadata
           config_timezone: America/New_York
           plugin_achievements: yes
           plugin_achievements_secrets: yes
@@ -50,10 +50,6 @@ jobs:
           plugin_notable: yes
           plugin_projects: yes
           plugin_projects_limit: 4
-          plugin_skyline: yes
-          plugin_skyline_frames: 60
-          plugin_skyline_quality: 0.5
-          plugin_skyline_year: current-year
           plugin_stackoverflow: yes
           plugin_stackoverflow_limit: 2
           plugin_stackoverflow_lines.snippet: 2
