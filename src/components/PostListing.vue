@@ -35,7 +35,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .posts__listing {
-  @apply flex flex-col;
+  @apply flex flex-col mb-8;
 
   .posts__listing__title {
     @apply inline-block text-xl font-bold;
