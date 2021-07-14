@@ -7,6 +7,7 @@
     <ul v-if="posts" class="posts__index">
       <post-listing :content="post" v-for="(post, key) in posts" :key="key"></post-listing>
     </ul>
+    <post-nav :offset="offset" :count="posts.length" @prev="postsPrev" @next="postsNext"></post-nav>
   </div>
 </template>
 
@@ -14,19 +15,30 @@
 import { computed, defineComponent } from 'vue'
 import { useStore } from '../store'
 import PostListing from '../components/PostListing.vue'
+import PostNav from '../components/PostNav.vue'
 
 export default defineComponent({
   name: 'PostView',
   components: {
-    PostListing
+    PostListing,
+    PostNav
   },
   setup() {
     const store = useStore()
     const posts = computed(() => store.state.content.posts)
+    const offset = computed(() => store.state.content.offset)
 
     if (!posts.value.length) store.dispatch('getPosts')
 
-    return { posts }
+    const postsPrev = () => {
+      store.dispatch('setOffset', offset.value - 10)
+    }
+
+    const postsNext = () => {
+      store.dispatch('setOffset', offset.value + 10)
+    }
+
+    return { posts, offset, postsPrev, postsNext }
   }
 })
 </script>

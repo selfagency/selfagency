@@ -44,7 +44,7 @@ export interface Post {
   totalReactions: number
 }
 
-export interface State {
+export interface AppState {
   cache: Array<Post>
   content: {
     post: Post | null
