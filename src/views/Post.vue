@@ -1,5 +1,7 @@
 <template>
-  <post-content :content="post" v-if="post"></post-content>
+  <div id="post">
+    <post-content :content="post" v-if="post"></post-content>
+  </div>
 </template>
 
 <script lang="ts">
@@ -9,7 +11,7 @@ import { useStore } from '../store'
 import PostContent from '../components/PostContent.vue'
 
 export default defineComponent({
-  name: 'PostView',
+  name: 'Post',
   components: {
     PostContent
   },

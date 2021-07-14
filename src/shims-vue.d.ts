@@ -5,5 +5,5 @@ declare module '*.vue' {
   export default component
 }
 
-declare module 'smartypants' {}
+declare module 'smartypants'
 /* eslint-enable */

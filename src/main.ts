@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import './assets/styles/main.scss'
 import './registerServiceWorker'
 import router from './router'
 import { key, store } from './store'

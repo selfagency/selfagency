@@ -1,3 +1,17 @@
+export interface GetPostsResult {
+  totalCount: number
+  pageInfo: {
+    endCursor: string
+    startCursor: string
+    hasNextPage: boolean
+    hasPreviousPage: boolean
+  }
+  edges: {
+    cursor: string
+    post: PostReduced
+  }[]
+}
+
 export interface Post {
   id: string
   url: string

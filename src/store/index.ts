@@ -1,11 +1,11 @@
 import { GithubBlog } from '@rena.to/github-blog'
 import { InjectionKey } from 'vue'
 import { createStore, Store, useStore as baseUseStore } from 'vuex'
-import { Post, State } from '../main.d'
+import { GetPostsResult, Post, State } from '../main.d'
 
 const blog = new GithubBlog({
   repo: 'selfagency/selfagency',
-  token: process.env.GH_TOKEN
+  token: process.env.VUE_APP_GH_TOKEN
 })
 
 const key: InjectionKey<Store<State>> = Symbol()
@@ -26,8 +26,10 @@ const store: Store<State> = createStore<State>({
     setOffset(state, payload: number) {
       state.content.offset = payload
     },
-    setPosts(state, payload: Array<Post>) {
-      state.content.posts.push(...payload)
+    setPosts(state, payload: GetPostsResult) {
+      payload.edges.forEach(edge => {
+        state.content.posts.push(edge.post)
+      })
     },
     setPost(state, payload: Post) {
       state.content.post = payload
@@ -35,12 +37,16 @@ const store: Store<State> = createStore<State>({
   },
   actions: {
     async getPosts({ commit }, offset = 0) {
-      const posts = await blog.getPosts({
-        query: { type: 'post', state: 'published' },
-        pager: { limit: 10, offset }
-      })
+      try {
+        const posts = await blog.getPosts({
+          query: { type: 'post', state: 'published' },
+          pager: { limit: 10, offset }
+        })
 
-      commit('addPosts', posts)
+        commit('setPosts', posts)
+      } catch (error) {
+        console.error(error)
+      }
     },
     async getPost({ commit, state }, slug) {
       try {

@@ -44,7 +44,10 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-colon-notation': 'double',
-    'selector-pseudo-element-no-unknown': [true, { ignorePseudoElements: ['/^v-/i'] }],
+    'selector-pseudo-element-no-unknown': [
+      true,
+      { ignorePseudoElements: ['/^v-/i', 'deep', 'before', 'after', 'last-of-type'] }
+    ],
     'string-quotes': 'single',
     'at-rule-empty-line-before': [
       'always',
@@ -80,6 +83,6 @@ module.exports = {
         ignoreProperties: ['font-path']
       }
     ],
-    'selector-pseudo-element-allowed-list': ['/^v-/i', 'before', 'after', 'last-of-type']
+    'selector-pseudo-element-allowed-list': ['/^v-/i', 'deep', 'before', 'after', 'last-of-type']
   }
 }
