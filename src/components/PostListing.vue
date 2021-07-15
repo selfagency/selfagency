@@ -1,5 +1,5 @@
 <template>
-  <li class="posts__listing">
+  <li class="posts__listing" v-if="content">
     <h1 class="posts__listing__title" v-if="content.title">
       <router-link :to="`/${content.labels.slug[0]}`">
         {{ smartypants(content.title, 'qDew') }}
@@ -20,7 +20,7 @@ import { Post } from '../main.d'
 const fmtDate = (date: string) => dayjs(date).format('MMM D, YYYY @ h:mma')
 
 export default defineComponent({
-  name: 'PostContent',
+  name: 'PostListing',
   props: {
     content: {
       type: [Object] as PropType<Post>,

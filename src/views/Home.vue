@@ -5,7 +5,7 @@
       <span class="home__blurb__line"></span>
     </div>
     <ul v-if="posts" class="posts__index">
-      <post-listing :content="post" v-for="(post, key) in posts" :key="key"></post-listing>
+      <post-listing v-for="(post, key) in posts" :key="key" :content="post"></post-listing>
     </ul>
     <post-nav :offset="offset" :count="posts.length" @prev="postsPrev" @next="postsNext"></post-nav>
   </div>

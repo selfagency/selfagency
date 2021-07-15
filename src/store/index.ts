@@ -27,13 +27,20 @@ const store: Store<AppState> = createStore<AppState>({
       state.content.offset = payload
     },
     SET_POSTS(state, payload: GetPostsResult) {
-      console.log(payload)
       payload.edges.forEach(edge => {
-        state.content.posts.push(edge.post)
+        if (edge.node) {
+          state.content.posts.push(edge.node)
+        } else {
+          console.error(`Error retrieving post at cursor ${edge.cursor}`)
+        }
       })
     },
-    SET_POST(state, payload: Post) {
-      state.content.post = payload
+    SET_POST(state, payload: Post | null) {
+      if (payload) {
+        state.content.post = payload
+      } else {
+        console.error('Error retrieving post.')
+      }
     }
   },
   actions: {

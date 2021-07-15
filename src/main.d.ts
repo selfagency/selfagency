@@ -8,7 +8,7 @@ export interface GetPostsResult {
   }
   edges: {
     cursor: string
-    post: PostReduced
+    node: PostReduced
   }[]
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="post__content">
+  <article class="post__content" v-if="content">
     <time v-if="content.createdAt" class="post-content__date" :datetime="content.createdAt">
       {{ fmtDate(content.createdAt) }}
     </time>
@@ -21,7 +21,7 @@ export default defineComponent({
   name: 'PostContent',
   props: {
     content: {
-      type: [Object] as PropType<Post>,
+      type: ([Object] as PropType<Post>) || null,
       required: true
     }
   },

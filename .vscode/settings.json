@@ -1,3 +1,19 @@
 {
-  "deepscan.enable": true
+  "deepscan.enable": true,
+  "taskExplorer.enableAnsiconForAnt": false,
+  "taskExplorer.enableAnt": false,
+  "taskExplorer.enableAppPublisher": false,
+  "taskExplorer.enableBash": false,
+  "taskExplorer.enableBatch": false,
+  "taskExplorer.enableGrunt": false,
+  "taskExplorer.enableGulp": false,
+  "taskExplorer.enableGradle": false,
+  "taskExplorer.enableMake": false,
+  "taskExplorer.enableNsis": false,
+  "taskExplorer.enablePerl": false,
+  "taskExplorer.enablePython": false,
+  "taskExplorer.enableRuby": false,
+  "taskExplorer.enablePowershell": false,
+  "taskExplorer.enableMaven": false,
+  "taskExplorer.readUserTasks": false
 }

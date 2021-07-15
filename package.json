@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "doppler run -- vue-cli-service serve",
     "build": "doppler run -- vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "vite": "doppler run -- node ./bin/vite"
   },
   "dependencies": {
     "@rena.to/github-blog": "^0.4.1",
@@ -21,11 +22,10 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.2.4",
     "@tailwindcss/typography": "^0.4.1",
     "@types/marked": "^2.0.4",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
@@ -36,23 +36,24 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "autoprefixer": "^9",
-    "eslint": "^6.7.2",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.30.0",
     "eslint-config-stylelint": "^13.1.1",
     "eslint-gitignore": "^0.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-vue": "^7.0.0",
     "jest": "^27.0.6",
-    "postcss": "^7",
+    "postcss": "^8.3.5",
     "prettier": "^2.2.1",
     "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
     "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "typescript": "~4.1.5",
+    "tailwindcss": "^2.2.4",
+    "typescript": "~4.3.5",
+    "vue-cli-plugin-vite": "~1.3.5",
     "vue2-animate": "^2.1.4"
   }
 }
