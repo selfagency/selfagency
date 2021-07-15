@@ -11,8 +11,7 @@ module.exports = {
     '@vue/typescript/recommended',
     '@vue/prettier',
     '@vue/prettier/@typescript-eslint',
-    'plugin:security/recommended',
-    'stylelint'
+    'plugin:security/recommended'
   ],
   ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
   parserOptions: {
@@ -42,6 +41,7 @@ module.exports = {
     'node/no-extraneous-import': ['off'],
     'node/no-unsupported-features/es-syntax': ['off'],
     'node/no-unpublished-require': ['off'],
+    'node/no-unpublished-import': ['off'],
     'padding-line-between-statements': ['warn'],
     quotes: [
       'error',

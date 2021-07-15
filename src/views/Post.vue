@@ -7,8 +7,8 @@
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
 import { useRoute } from 'vue-router'
-import { useStore } from '../store'
-import PostContent from '../components/PostContent.vue'
+import { useStore } from '@/store'
+import PostContent from '@/components/PostContent.vue'
 
 export default defineComponent({
   name: 'Post',

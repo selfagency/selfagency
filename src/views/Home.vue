@@ -13,9 +13,9 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
-import { useStore } from '../store'
-import PostListing from '../components/PostListing.vue'
-import PostNav from '../components/PostNav.vue'
+import { useStore } from '@/store'
+import PostListing from '@/components/PostListing.vue'
+import PostNav from '@/components/PostNav.vue'
 
 export default defineComponent({
   name: 'PostView',

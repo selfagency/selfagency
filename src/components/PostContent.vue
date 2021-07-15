@@ -13,7 +13,7 @@ import dayjs from 'dayjs'
 import marked from 'marked'
 import smartypants from 'smartypants'
 import { defineComponent, PropType } from 'vue'
-import { Post } from '../main.d'
+import { Post } from '@/main.d'
 
 const fmtDate = (date: string) => dayjs(date).format('MMM D, YYYY @ h:mma')
 
