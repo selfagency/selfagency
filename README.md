@@ -1,6 +1,6 @@
 # selfagency / daniel sieradski
 
-graphic designer and journalist turned full-stack javascript/typescript developer and devops engineer. former publisher of the jewish worker, jewschool, and orthodox anarchist. making bigots mad online since '92. built ironmarch.exposed and the sukkah at occupy wall street. 
+graphic designer and journalist turned full-stack developer and devops engineer. former publisher of the jewish worker, jewschool, and orthodox anarchist. making bigots mad online since '92. built ironmarch.exposed and the sukkah at occupy wall street. 
 
 ## recent work
 
