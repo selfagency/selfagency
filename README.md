@@ -22,7 +22,7 @@ graphic designer and journalist turned full-stack javascript/typescript develope
 - [ironmarch.exposed](https://www.lawfareblog.com/iron-march-data-dump-provides-window-how-white-supremacists-communicate-and-recruit)
 - [the b.s. detector](https://www.inverse.com/article/23781-bs-detector-facebook-fake-news-daniel-sieradski)
 - [the nazi detector](https://forward.com/news/343648/nazi-detector-app-brands-right-wing-extremists-and-donald-trump/)
-- [shulshopper](https://www.jpost.com/health-and-sci-tech/internet-and-technology/looking-for-a-funky-place-to-pray-click-here)
+- [shulshopper](https://www.jewishexponent.com/2013/05/03/jew-it-yourself-philosophy-behind-new-sites/)
 
 ## connect
 
