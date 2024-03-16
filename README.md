@@ -4,6 +4,11 @@ graphic designer and journalist turned full-stack developer and devops engineer.
 
 ## recent work
 
+## nushell
+
+- [bru](https://github.com/selfagency/bru) - a [nushell](https://github.com/nushell/nushell) wrapper for [homebrew](https://github.com/homebrew)
+- [fnm support](https://github.com/nushell/nu_scripts/pull/593) - adds support for [fnm](https://github.com/Schniz/fnm) to nushell
+
 ### fediverse
 
 - [mastodont](https://github.com/selfagency/mastodont) — cli tool to import blocklists into mastodon
