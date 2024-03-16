@@ -2,9 +2,9 @@
 
 graphic designer and journalist turned full-stack developer and devops engineer. former publisher of the jewish worker, jewschool, and orthodox anarchist. making bigots mad online since '92. built ironmarch.exposed and the sukkah at occupy wall street. 
 
-## recent work
+## work
 
-## nushell
+### nushell
 
 - [bru](https://github.com/selfagency/bru) - a [nushell](https://github.com/nushell/nushell) wrapper for [homebrew](https://github.com/homebrew)
 - [fnm support](https://github.com/nushell/nu_scripts/pull/593) - adds support for [fnm](https://github.com/Schniz/fnm) to nushell
@@ -21,8 +21,7 @@ graphic designer and journalist turned full-stack developer and devops engineer.
 - [merge-coverage](https://github.com/selfagency/merge-coverage) — merge coverage reports from parallelized test runners into a single report
 - [slackfeedbot](https://github.com/selfagency/slackfeedbot) — push rss feed updates to slack via github actions
 
-## past work
-
+### past
 
 - [ironmarch.exposed](https://www.lawfareblog.com/iron-march-data-dump-provides-window-how-white-supremacists-communicate-and-recruit)
 - [the b.s. detector](https://www.inverse.com/article/23781-bs-detector-facebook-fake-news-daniel-sieradski)
